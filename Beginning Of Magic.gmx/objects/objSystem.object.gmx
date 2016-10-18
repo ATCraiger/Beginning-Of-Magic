@@ -969,6 +969,7 @@ if(isTalking &amp;&amp; optionsAreAvailable &amp;&amp; gamepad_button_check_pres
             with(dialogueChoices[i])
                 instance_destroy();
         }
+        talkingObject.iAmTalking = false;
     }
     else if(array_length_2d(talkingObject.myDialogue, conversationCounter) == 1) { //Show last message from NPC
         talkChoice = 0;
